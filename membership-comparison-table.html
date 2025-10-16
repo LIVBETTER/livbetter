@@ -1,0 +1,347 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+    
+    .membership-comparison-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 16px;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+    
+    .membership-comparison-table th {
+        background-color: #ffffff;
+        padding: 16px 20px;
+        font-family: 'Merriweather', serif;
+        font-weight: 700;
+        font-size: 20px;
+        color: #000000;
+        text-align: center;
+        border-bottom: 1px solid #d1d5db;
+        border-right: 1px solid #d1d5db;
+        letter-spacing: 0.025em;
+    }
+    
+    .membership-comparison-table th:first-child {
+        text-align: left;
+    }
+    
+    .membership-comparison-table th:last-child {
+        border-right: none;
+    }
+    
+    .membership-comparison-table td {
+        padding: 16px 20px;
+        border-bottom: 1px solid #e5e7eb;
+        border-right: 1px solid #e5e7eb;
+        vertical-align: top;
+        min-height: 60px;
+        color: #000000;
+        background-color: rgba(255, 255, 255, 0.6);
+        text-align: center;
+    }
+    
+    .membership-comparison-table td:first-child {
+        text-align: left;
+    }
+    
+    .membership-comparison-table td:last-child {
+        border-right: none;
+    }
+    
+    .membership-comparison-table tr:last-child td {
+        border-bottom: none;
+    }
+    
+    .membership-comparison-table tr:nth-child(even) td {
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+    
+    .membership-comparison-table .membership-name {
+        font-weight: 500;
+        font-size: 16px;
+        color: #000000;
+        margin-bottom: 4px;
+    }
+    
+    .membership-comparison-table .membership-value {
+        font-size: 16px;
+        color: #000000;
+        line-height: 1.5;
+    }
+    
+    .membership-comparison-table .membership-feature {
+        font-size: 16px;
+        color: #000000;
+        line-height: 1.5;
+    }
+    
+    .membership-comparison-table .value-option {
+        margin-bottom: 4px;
+    }
+    
+    .membership-comparison-table .value-option:last-child {
+        margin-bottom: 0;
+    }
+    
+    .membership-comparison-table .feature-info {
+        color: #000000;
+        font-weight: 400;
+    }
+    
+    .membership-comparison-table .value-info {
+        color: #000000;
+        font-weight: 400;
+    }
+    
+    @media (max-width: 768px) {
+        .membership-comparison-table, .membership-comparison-table thead, .membership-comparison-table tbody, .membership-comparison-table th, .membership-comparison-table td, .membership-comparison-table tr {
+            display: block;
+        }
+        
+        .membership-comparison-table thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+        
+        .membership-comparison-table tr {
+            border: 1px solid #e5e7eb;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        
+        .membership-comparison-table td {
+            border: none;
+            position: relative;
+            padding-left: 50%;
+        }
+        
+        .membership-comparison-table td:before {
+            content: attr(data-label);
+            position: absolute;
+            left: 6px;
+            width: 45%;
+            padding-right: 10px;
+            white-space: nowrap;
+            font-weight: 600;
+            color: #000000;
+        }
+    }
+</style>
+
+<table class="membership-comparison-table">
+    <thead>
+        <tr>
+            <th>Membership</th>
+            <th>Monthly Credits</th>
+            <th>Booking Discount</th>
+            <th>Cafe Discount</th>
+            <th>Guest Passes</th>
+            <th>Free Drinks</th>
+            <th>Exclusive Events</th>
+            <th>Monthly Cost</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td data-label="Membership">
+                <div class="membership-name">LivBalanced</div>
+            </td>
+            <td data-label="Monthly Credits">
+                <div class="membership-value">
+                    <div class="value-option">10</div>
+                </div>
+            </td>
+            <td data-label="Booking Discount">
+                <div class="membership-feature">
+                    <div class="feature-info">10%</div>
+                </div>
+            </td>
+            <td data-label="Cafe Discount">
+                <div class="membership-feature">
+                    <div class="feature-info">10%</div>
+                </div>
+            </td>
+            <td data-label="Guest Passes">
+                <div class="membership-feature">
+                    <div class="feature-info">-</div>
+                </div>
+            </td>
+            <td data-label="Free Drinks">
+                <div class="membership-feature">
+                    <div class="feature-info">1 / month</div>
+                </div>
+            </td>
+            <td data-label="Exclusive Events">
+                <div class="membership-feature">
+                    <div class="feature-info">-</div>
+                </div>
+            </td>
+            <td data-label="Monthly Cost">
+                <div class="membership-value">
+                    <div class="value-option">£225</div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td data-label="Membership">
+                <div class="membership-name">LivEnhanced</div>
+            </td>
+            <td data-label="Monthly Credits">
+                <div class="membership-value">
+                    <div class="value-option">20</div>
+                </div>
+            </td>
+            <td data-label="Booking Discount">
+                <div class="membership-feature">
+                    <div class="feature-info">10%</div>
+                </div>
+            </td>
+            <td data-label="Cafe Discount">
+                <div class="membership-feature">
+                    <div class="feature-info">10%</div>
+                </div>
+            </td>
+            <td data-label="Guest Passes">
+                <div class="membership-feature">
+                    <div class="feature-info">1 / month</div>
+                </div>
+            </td>
+            <td data-label="Free Drinks">
+                <div class="membership-feature">
+                    <div class="feature-info">1 / month</div>
+                </div>
+            </td>
+            <td data-label="Exclusive Events">
+                <div class="membership-feature">
+                    <div class="feature-info">-</div>
+                </div>
+            </td>
+            <td data-label="Monthly Cost">
+                <div class="membership-value">
+                    <div class="value-option">£350</div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td data-label="Membership">
+                <div class="membership-name">LivOptimized</div>
+            </td>
+            <td data-label="Monthly Credits">
+                <div class="membership-value">
+                    <div class="value-option">40</div>
+                </div>
+            </td>
+            <td data-label="Booking Discount">
+                <div class="membership-feature">
+                    <div class="feature-info">10%</div>
+                </div>
+            </td>
+            <td data-label="Cafe Discount">
+                <div class="membership-feature">
+                    <div class="feature-info">10%</div>
+                </div>
+            </td>
+            <td data-label="Guest Passes">
+                <div class="membership-feature">
+                    <div class="feature-info">1 / month</div>
+                </div>
+            </td>
+            <td data-label="Free Drinks">
+                <div class="membership-feature">
+                    <div class="feature-info">1 / month</div>
+                </div>
+            </td>
+            <td data-label="Exclusive Events">
+                <div class="membership-feature">
+                    <div class="feature-info">✓</div>
+                </div>
+            </td>
+            <td data-label="Monthly Cost">
+                <div class="membership-value">
+                    <div class="value-option">£500</div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td data-label="Membership">
+                <div class="membership-name">LivUltimate</div>
+            </td>
+            <td data-label="Monthly Credits">
+                <div class="membership-value">
+                    <div class="value-option">80</div>
+                </div>
+            </td>
+            <td data-label="Booking Discount">
+                <div class="membership-feature">
+                    <div class="feature-info">20%</div>
+                </div>
+            </td>
+            <td data-label="Cafe Discount">
+                <div class="membership-feature">
+                    <div class="feature-info">10%</div>
+                </div>
+            </td>
+            <td data-label="Guest Passes">
+                <div class="membership-feature">
+                    <div class="feature-info">2 / month</div>
+                </div>
+            </td>
+            <td data-label="Free Drinks">
+                <div class="membership-feature">
+                    <div class="feature-info">1 / week</div>
+                </div>
+            </td>
+            <td data-label="Exclusive Events">
+                <div class="membership-feature">
+                    <div class="feature-info">✓</div>
+                </div>
+            </td>
+            <td data-label="Monthly Cost">
+                <div class="membership-value">
+                    <div class="value-option">£750</div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td data-label="Membership">
+                <div class="membership-name">LivUltimate Together</div>
+            </td>
+            <td data-label="Monthly Credits">
+                <div class="membership-value">
+                    <div class="value-option">120</div>
+                </div>
+            </td>
+            <td data-label="Booking Discount">
+                <div class="membership-feature">
+                    <div class="feature-info">20%</div>
+                </div>
+            </td>
+            <td data-label="Cafe Discount">
+                <div class="membership-feature">
+                    <div class="feature-info">10%</div>
+                </div>
+            </td>
+            <td data-label="Guest Passes">
+                <div class="membership-feature">
+                    <div class="feature-info">2 / month</div>
+                </div>
+            </td>
+            <td data-label="Free Drinks">
+                <div class="membership-feature">
+                    <div class="feature-info">2 / week</div>
+                </div>
+            </td>
+            <td data-label="Exclusive Events">
+                <div class="membership-feature">
+                    <div class="feature-info">✓</div>
+                </div>
+            </td>
+            <td data-label="Monthly Cost">
+                <div class="membership-value">
+                    <div class="value-option">£1,100</div>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
