@@ -1,5 +1,5 @@
 from fullwidth import *
-U="https://raw.githubusercontent.com/LIVBETTER/livbetter/f43ed31c48644d7e3cf030fc3b631d478a9ab69d/email/2026-11-24-members-week/"
+U="https://raw.githubusercontent.com/LIVBETTER/livbetter/d5fe6c61f09ed575641065c3c1cf56e8bf1143b9/email/2026-11-24-members-week/"
 GC="https://momence.com/gcc/43664"; MEM="https://www.joinlivbetter.com/#memberships"
 r=stripes_top()
 r+=band(MOSS,img(U,"1_masthead.jpg","Members' Week, 24 to 27 November. Our best offers of the year, until Black Friday. A £50 bonus on every £100 of gift cards, and a surprise in store on Friday.",GC))
