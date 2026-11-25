@@ -1,5 +1,5 @@
 from fullwidth import *
-U="https://raw.githubusercontent.com/LIVBETTER/livbetter/e4d27cfee7e5b7c7507db1610fe31a478886c9d6/email/2026-11-24-members-week/"
+U="https://raw.githubusercontent.com/LIVBETTER/livbetter/ffe8326e13831c76198e9ac680671395db9b9b0c/email/2026-11-24-members-week/"
 GC="https://momence.com/gcc/43664"; HBOT="https://www.joinlivbetter.com/#hbot"
 r=stripes_top()
 r+=band(MOSS,img(U,"1_masthead.jpg","Members' Week, 26 to 30 November. Our best offers of the year, through Black Friday. A £50 bonus on every £100 of gift cards, and a surprise in store on Friday.",GC))
@@ -7,7 +7,9 @@ r+=tear(U,"tear_mp.png",PAPER)
 r+=text(PAPER,"Hello {{contact.first_name}},",f"padding:30px 30px 0;font-family:{SANS};font-size:11px;line-height:16px;letter-spacing:4px;text-transform:uppercase;color:#5A5E4E;")
 r+=band(PAPER,img(U,"2_giftcards.jpg","No. 01, gift cards, 26 to 30 November: give one, get £50. For every £100 you spend, a £50 bonus card for you, up to £200 bonus on £400. Your bonus card is added after you buy. Gift cards are sent by email, or picked up or posted from the clinic. Bonus cards can be used from 1 January 2027. Up to £200 bonus per customer. T&Cs apply. Cannot be used with any other offer or discount.",GC))
 r+=button(PAPER,"Buy a gift card",GC,"6px 20px 44px")
-r+=band(PAPER,img(U,"4_blackfriday.jpg","No. 02, Black Friday, 27 November: something's waiting. Our best deal of the year, in store only. Come into 56 London End on Black Friday, Friday 27 November. We're keeping it a secret until then. Also on Friday: a free HydroPeptide mask when you come in for red light. Our Instagram giveaway is live now: three gift cards to win at @livbetter.uk."))
+r+=band(PAPER,img(U,"4a_blackfriday_top.jpg","No. 02, Black Friday, 27 November: something's waiting. Our best deal of the year, in store only."))
+r+=band(PAPER,img(U,"4b_envelope.gif","A LIVBETTER envelope opens and a card slides out: Friday 27 November. Come in to find out. In store only, 56 London End."))
+r+=band(PAPER,img(U,"4c_blackfriday_bottom.jpg","Come into 56 London End on Black Friday, Friday 27 November, for our best deal of the year. We're keeping it a secret until then, and it's only in store. Also on Friday: a free HydroPeptide mask when you come in for red light. Our Instagram giveaway is live now: three gift cards to win at @livbetter.uk."))
 r+=tear(U,"tear_pm.png",MOSS)
 r+=band(MOSS,img(U,"3_hbot.jpg","No. 03, Cyber Monday, 30 November only: more time in the chamber. HBOT Duo or Solo. Buy 5 sessions, get 1 free. Buy 10, get 3 free. Buy 20, get 5 free. Buy your pack on Monday 30 November only and we add your free sessions after you buy. T&Cs apply. Cannot be used with any other offer or discount.",HBOT))
 r+=button(MOSS,"Buy an HBOT pack",HBOT,"0 20px 44px")
