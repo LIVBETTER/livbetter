@@ -1,8 +1,8 @@
 from fullwidth import *
-U="https://raw.githubusercontent.com/LIVBETTER/livbetter/72bf2a987eebf4e698a23662ff83776c0fafcf55/email/2026-11-24-members-week/"
+U="https://raw.githubusercontent.com/LIVBETTER/livbetter/09b9b6ec1761ebdf8f266dc2902beee8dc9097c9/email/2026-11-24-members-week/"
 GC="https://momence.com/gcc/43664"; HBOT="https://www.joinlivbetter.com/#hbot"
 r=stripes_top()
-r+=band(MOSS,img(U,"1_masthead.jpg","Members' Week, 26 to 30 November. Our best offers of the year, through Black Friday. A £50 bonus on every £100 of gift cards, and in-store offers on Friday.",GC))
+r+=band(MOSS,img(U,"1_masthead.jpg","Members' Week, 26 to 30 November. Offers all week, from Black Friday to Cyber Monday. A £50 bonus on every £100 of gift cards, and in-store offers on Friday.",GC))
 r+=tear(U,"tear_mp.png",PAPER)
 r+=text(PAPER,"Hello {{contact.first_name}},",f"padding:30px 30px 0;font-family:{SANS};font-size:11px;line-height:16px;letter-spacing:4px;text-transform:uppercase;color:#5A5E4E;")
 r+=band(PAPER,img(U,"2_giftcards.jpg","No. 01, gift cards, 26 to 30 November: give one, get £50. For every £100 you spend, a £50 bonus card for you, up to £200 bonus on £400. Your bonus card is added after you buy. Gift cards are sent by email, or picked up or posted from the clinic. Bonus cards can be used from 1 January 2027. Up to £200 bonus per customer. T&Cs apply. Cannot be used with any other offer or discount.",GC))
