@@ -1,8 +1,8 @@
 from fullwidth import *
-U="https://raw.githubusercontent.com/LIVBETTER/livbetter/09b9b6ec1761ebdf8f266dc2902beee8dc9097c9/email/2026-11-24-members-week/"
-GC="https://momence.com/gcc/43664"; HBOT="https://www.joinlivbetter.com/#hbot"
+U="https://raw.githubusercontent.com/LIVBETTER/livbetter/77f91379e87fdba3e2365e807088e9b80cde151c/email/2026-11-24-members-week/"
+GC="https://www.joinlivbetter.com/gift-cards"; HBOT="https://www.joinlivbetter.com/hbot-packs"
 r=stripes_top()
-r+=band(MOSS,img(U,"1_masthead.jpg","Members' Week, 26 to 30 November. Offers all week, from Black Friday to Cyber Monday. A £50 bonus on every £100 of gift cards, and in-store offers on Friday.",GC))
+r+=band(MOSS,img(U,"1_masthead.jpg","Black Friday Week, 26 to 30 November. Five days of offers, ending on Cyber Monday. A £50 bonus on every £100 of gift cards, and in-store offers on Friday.",GC))
 r+=tear(U,"tear_mp.png",PAPER)
 r+=text(PAPER,"Hello {{contact.first_name}},",f"padding:30px 30px 0;font-family:{SANS};font-size:11px;line-height:16px;letter-spacing:4px;text-transform:uppercase;color:#5A5E4E;")
 r+=band(PAPER,img(U,"2_giftcards.jpg","No. 01, gift cards, 26 to 30 November: give one, get £50. For every £100 you spend, a £50 bonus card for you, up to £200 bonus on £400. Your bonus card is added after you buy. Gift cards are sent by email, or picked up or posted from the clinic. Bonus cards can be used from 1 January 2027. Up to £200 bonus per customer. T&Cs apply. Cannot be used with any other offer or discount.",GC))
@@ -17,4 +17,4 @@ r+=tear(U,"tear_mp.png",PAPER)
 r+=band(PAPER,img(U,"5_signoff.jpg","See you this week. LIVBETTER, 56 London End, Beaconsfield HP9 2JH. Gift card bonus: for every £100 spent on LIVBETTER gift cards from 26 to 30 November 2026, get a £50 bonus card, up to £200 bonus per customer. The bonus card is added after purchase and can be used from 1 January 2027. HBOT packs: buy 5, 10 or 20 HBOT sessions (Duo or Solo) on Monday 30 November 2026 only and get 1, 3 or 5 free sessions, added after purchase. Free HydroPeptide mask with a red light session on Friday 27 November 2026, one per person, while stocks last. Instagram giveaway terms are on the post. Offers cannot be used with any other offer or discount. Treatments are for over-18s only. T&Cs apply."))
 r+=text(PAPER,'No longer want these emails? <a href="{{email.unsubscribe_link}}" target="_blank" style="color:#1B1F14;text-decoration:underline;">Unsubscribe</a>',f"padding:0 30px 26px;font-family:{SANS};font-size:12px;line-height:20px;color:#5A5E4E;")
 r+=stripes_bottom()
-open("members_week.html","w").write(page("Members' Week starts tomorrow: £50 on every £100","From Thursday: a £50 bonus on every £100 of gift cards, in-store offers on Friday, and free HBOT sessions on Cyber Monday.",r))
+open("members_week.html","w").write(page("Black Friday Week starts tomorrow: £50 on every £100","From Thursday: a £50 bonus on every £100 of gift cards, in-store offers on Friday, and free HBOT sessions on Cyber Monday.",r))
