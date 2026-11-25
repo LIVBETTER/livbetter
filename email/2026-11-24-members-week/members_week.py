@@ -1,11 +1,11 @@
 from fullwidth import *
-U="https://raw.githubusercontent.com/LIVBETTER/livbetter/ccc29799e91d70f07304f214ae59a8fe5e67a2c3/email/2026-11-24-members-week/"
+U="https://raw.githubusercontent.com/LIVBETTER/livbetter/50587c513ae2ac4a7c74d1481ac5e2c14116bfc5/email/2026-11-24-members-week/"
 GC="https://momence.com/gcc/43664"; MEM="https://www.joinlivbetter.com/#memberships"
 r=stripes_top()
 r+=band(MOSS,img(U,"1_masthead.jpg","Members' Week, 26 to 30 November. Our best offers of the year, through Black Friday. A £50 bonus on every £100 of gift cards, and a surprise in store on Friday.",GC))
 r+=tear(U,"tear_mp.png",PAPER)
 r+=text(PAPER,"Hello {{contact.first_name}},",f"padding:30px 30px 0;font-family:{SANS};font-size:11px;line-height:16px;letter-spacing:4px;text-transform:uppercase;color:#5A5E4E;")
-r+=band(PAPER,img(U,"2_giftcards.jpg","No. 01, gift cards, 26 to 30 November: give one, get £50. For every £100 you spend, a £50 bonus card for you, up to £150 bonus on £300. Your bonus card is added after you buy. Gift cards are sent by email, or picked up or posted from the clinic.",GC))
+r+=band(PAPER,img(U,"2_giftcards.jpg","No. 01, gift cards, 26 to 30 November: give one, get £50. For every £100 you spend, a £50 bonus card for you, up to £150 bonus on £300. Your bonus card is added after you buy. Gift cards are sent by email, or picked up or posted from the clinic. Up to £150 bonus per customer. T&Cs apply. Cannot be used with any other offer or discount.",GC))
 r+=button(PAPER,"Buy a gift card",GC,"6px 20px 44px")
 r+=tear(U,"tear_pm.png",MOSS)
 r+=band(MOSS,img(U,"3_membership.jpg","No. 02, membership: start now, keep this price. Your price locked for 12 months, a guest HBOT Duo session for a friend, and your £99 trial pass taken off your first month.",MEM))
