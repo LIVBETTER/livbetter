@@ -1,11 +1,11 @@
 from fullwidth import *
-U="https://raw.githubusercontent.com/LIVBETTER/livbetter/77f91379e87fdba3e2365e807088e9b80cde151c/email/2026-11-24-members-week/"
+U="https://raw.githubusercontent.com/LIVBETTER/livbetter/f3ea94a5847abad6c20e6d8b492e16a2ac9551a2/email/2026-11-24-members-week/"
 GC="https://www.joinlivbetter.com/gift-cards"; HBOT="https://www.joinlivbetter.com/hbot-packs"
 r=stripes_top()
 r+=band(MOSS,img(U,"1_masthead.jpg","Black Friday Week, 26 to 30 November. Five days of offers, ending on Cyber Monday. A £50 bonus on every £100 of gift cards, and in-store offers on Friday.",GC))
 r+=tear(U,"tear_mp.png",PAPER)
 r+=text(PAPER,"Hello {{contact.first_name}},",f"padding:30px 30px 0;font-family:{SANS};font-size:11px;line-height:16px;letter-spacing:4px;text-transform:uppercase;color:#5A5E4E;")
-r+=band(PAPER,img(U,"2_giftcards.jpg","No. 01, gift cards, 26 to 30 November: give one, get £50. For every £100 you spend, a £50 bonus card for you, up to £200 bonus on £400. Your bonus card is added after you buy. Gift cards are sent by email, or picked up or posted from the clinic. Bonus cards can be used from 1 January 2027. Up to £200 bonus per customer. T&Cs apply. Cannot be used with any other offer or discount.",GC))
+r+=band(PAPER,img(U,"2_giftcards.jpg","No. 01, gift cards, 26 to 30 November: give one, get £50. For every £100 you spend, a £50 bonus card for you, up to £200 bonus on £400. Shown: a £100 gift card and a £50 bonus card. Your bonus card is added after you buy. Gift cards are sent by email, or picked up or posted from the clinic. Bonus cards can be used from 1 January 2027. Up to £200 bonus per customer. T&Cs apply. Cannot be used with any other offer or discount.",GC))
 r+=button(PAPER,"Buy a gift card",GC,"6px 20px 44px")
 r+=band(PAPER,img(U,"4a_blackfriday_top.jpg","No. 02, Black Friday, 27 November: something's waiting. In-store offers, Friday only."))
 r+=band(PAPER,img(U,"4b_envelope.gif","A LIVBETTER envelope opens and a card slides out: Friday 27 November. Come in to find out. In store only, 56 London End."))
