@@ -1,5 +1,5 @@
 from fullwidth import *
-U="https://raw.githubusercontent.com/LIVBETTER/livbetter/f3ea94a5847abad6c20e6d8b492e16a2ac9551a2/email/2026-11-24-members-week/"
+U="https://raw.githubusercontent.com/LIVBETTER/livbetter/9b5de932ddf3ee74c2ca42fb892827c09a558505/email/2026-11-24-members-week/"
 GC="https://www.joinlivbetter.com/gift-cards"; HBOT="https://www.joinlivbetter.com/hbot-packs"
 r=stripes_top()
 r+=band(MOSS,img(U,"1_masthead.jpg","Black Friday Week, 26 to 30 November. Five days of offers, ending on Cyber Monday. A £50 bonus on every £100 of gift cards, and in-store offers on Friday.",GC))
@@ -14,7 +14,10 @@ r+=tear(U,"tear_pm.png",MOSS)
 r+=band(MOSS,img(U,"3_hbot.jpg","No. 03, Cyber Monday, 30 November only: more time in the chamber. HBOT Duo or Solo. Buy 5 sessions, get 1 free. Buy 10, get 3 free. Buy 20, get 5 free. Buy your pack on Monday 30 November only and we add your free sessions after you buy. T&Cs apply. Cannot be used with any other offer or discount.",HBOT))
 r+=button(MOSS,"Buy an HBOT pack",HBOT,"0 20px 44px")
 r+=tear(U,"tear_mp.png",PAPER)
-r+=band(PAPER,img(U,"5_signoff.jpg","See you this week. LIVBETTER, 56 London End, Beaconsfield HP9 2JH. Gift card bonus: for every £100 spent on LIVBETTER gift cards from 26 to 30 November 2026, get a £50 bonus card, up to £200 bonus per customer. The bonus card is added after purchase and can be used from 1 January 2027. HBOT packs: buy 5, 10 or 20 HBOT sessions (Duo or Solo) on Monday 30 November 2026 only and get 1, 3 or 5 free sessions, added after purchase. Free HydroPeptide mask with a red light session on Friday 27 November 2026, one per person, while stocks last. Instagram giveaway terms are on the post. Offers cannot be used with any other offer or discount. Treatments are for over-18s only. T&Cs apply."))
+r+=text(PAPER,"See you this week","padding:46px 30px 0;font-family:'Bodoni Moda',Didot,Georgia,serif;font-size:34px;line-height:40px;letter-spacing:2px;text-transform:uppercase;color:#1B1F14;")
+r+=text(PAPER,"LIVBETTER &middot; 56 London End &middot; Beaconsfield HP9 2JH",f"padding:26px 30px 0;font-family:{SANS};font-size:11px;line-height:18px;letter-spacing:4px;text-transform:uppercase;color:#5A5E4E;")
+r+=text(PAPER,'<a href="https://www.joinlivbetter.com" target="_blank" style="color:#1B1F14;text-decoration:none;">joinlivbetter.com</a> &middot; @livbetter.uk &middot; 01494 313616',f"padding:8px 30px 0;font-family:{SANS};font-size:16px;line-height:24px;color:#1B1F14;")
+r+=text(PAPER,"Gift card bonus: for every £100 spent on LIVBETTER gift cards from 26 to 30 November 2026, get a £50 bonus card, up to £200 bonus per customer. The bonus card is added after purchase and can be used from 1 January 2027. HBOT packs: buy 5, 10 or 20 HBOT sessions (Duo or Solo) on Monday 30 November 2026 only and get 1, 3 or 5 free sessions, added after purchase. Free HydroPeptide mask with a red light session on Friday 27 November 2026, one per person, while stocks last. Instagram giveaway terms are on the post. Offers cannot be used with any other offer or discount. Treatments are for over-18s only. T&amp;Cs apply.",f"padding:24px 40px 22px;font-family:{SANS};font-size:12px;line-height:19px;color:#5A5E4E;")
 r+=text(PAPER,'No longer want these emails? <a href="{{email.unsubscribe_link}}" target="_blank" style="color:#1B1F14;text-decoration:underline;">Unsubscribe</a>',f"padding:0 30px 26px;font-family:{SANS};font-size:12px;line-height:20px;color:#5A5E4E;")
 r+=stripes_bottom()
-open("members_week.html","w").write(page("Black Friday Week starts tomorrow: £50 on every £100","From Thursday: a £50 bonus on every £100 of gift cards, in-store offers on Friday, and free HBOT sessions on Cyber Monday.",r))
+open("members_week.html","w").write(page("Black Friday Week starts today: £50 on every £100","Starting today: a £50 bonus on every £100 of gift cards, in-store offers on Friday, and free HBOT sessions on Cyber Monday.",r))
